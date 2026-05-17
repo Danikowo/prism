@@ -78,9 +78,13 @@
 	width: 400px;
 	margin-left: 10%;
 }
-.imggame {
+imggame {
 	width: 200px;
 	height: 200px;
+	transition: 0.8s;
+}
+.imggame:hover {
+	transform: scale(1.2);
 }
 #saper {
 	color: #ff4b0a;
