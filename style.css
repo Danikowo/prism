@@ -130,40 +130,8 @@ footer {
 	top: 0;
 	left: -50px;
 }
-.beat {
-	height: 100px;
-	width: 100px;
-	background-color: red;
-	position: absolute;
-	top: 1830px;
-	left: 900px;
-	transform: rotate(45deg);
-	transition: all 0.2s;
-}
 
-.beat::before,
-.beat::after {
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: red;
-	border-radius: 50%;
-}
 
-.beat::before {
-	top: -50px;
-	left: 0;
-}
-.beat::after {
-	top: 0;
-	left: -50px;
-}
-
-.beat:active {
-	transform: rotate(45deg) scale(1.2);
-	opacity: 0;
-}
 #count-heart {
 	margin-left: 580px;
 }
