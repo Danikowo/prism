@@ -1,0 +1,146 @@
+#container {
+	display: flex;
+	justify-content: center;
+}
+#glavn {
+	width: 1215px;
+	height: 2650px;
+	background-color: #0013dfd8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.texts {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 50px;
+	-webkit-text-stroke: 0.5px #0f23ff;
+	color: #00ffff;
+}
+#o {
+	color: #ff4b0a;
+	-webkit-text-stroke: 0.5px #000000;
+}
+.img {
+	width: 250px;
+	height: 250px;
+}
+.opis {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 40px;
+	-webkit-text-stroke: 0.5px black;
+	color: #ffffff;
+}
+.cartpriz {
+	width: 500px;
+	height: 230px;
+	display: flex;
+	align-items: center;
+}
+#hab {
+	width: 250px;
+	height: 50px;
+	margin: 10px;
+}
+#qw {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 30px;
+	-webkit-text-stroke: 0.5px black;
+	color: #ffffff;
+	margin-left: 10%;
+}
+.but {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+	background-color: #001646;
+	width: 100px;
+	height: 30px;
+}
+.minesweeper-container {
+	font-family: sans-serif;
+	text-align: center;
+	padding: 20px;
+}
+.board {
+	display: grid;
+	margin: 20px auto;
+	gap: 2px;
+	background: #ccc;
+	padding: 2px;
+	width: max-content;
+	border: 2px solid #888;
+}
+.cell {
+	width: 30px;
+	height: 30px;
+	background: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-weight: bold;
+	border: 1px solid #eee;
+}
+.cell.revealed {
+	background: #eee;
+	cursor: default;
+}
+.cell.mine {
+	background: red;
+}
+.cell.flag {
+	background: orange;
+}
+.controls button {
+	margin: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+.cell.flag {
+	font-size: 16px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#reset-btn {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+	background-color: #001646;
+	width: 210px;
+	height: 50px;
+	display: none;
+	margin-top: 10px;
+}
+#mines-count {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+}
+#mine-info {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+	display: none;
+	font-size: 18px;
+	margin: 10px;
+}
+#status {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+}
+.butS {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+	background-color: #001646;
+	height: 50px;
+}

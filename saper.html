@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="saper.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="glavn">
+				<a href="index.html"
+					><button class="but" id="hab">Вернутся в хаб</button></a
+				>
+				<h1 class="texts">PRISM</h1>
+				<h1 class="texts" id="o">Сапер</h1>
+				<br />
+				<h2 class="opis">Смысл игры:</h2>
+				<h2 id="qw">Раскрыть поле не попав на мину, 3 уровня сложности:</h2>
+
+				<div class="cartpriz">
+					<h2 class="opis">3 уровень:</h2>
+					<img
+						src="flux-kontext-DGOhT4C1s1jRq6PPq2Vd2-removebg-preview (1).png"
+						class="img"
+					/>
+				</div>
+				<div class="cartpriz">
+					<h2 class="opis">2 уровень:</h2>
+					<img
+						src="flux-kontext-DGOhT4C1s1jRq6PPq2Vd2-removebg-preview (1)фф.png"
+						class="img"
+					/>
+				</div>
+				<div class="cartpriz">
+					<h2 class="opis">1 уровень:</h2>
+					<img src="trophy_78370-345-removebg-preview.png" class="img" />
+				</div>
+				<br />
+				<h1 class="opis">Ваш рекорд:</h1>
+				<img
+					id="best-prize-img"
+					src=""
+					alt=""
+					style="width: 250px; margin-top: 10px"
+				/>
+				<div id="game">
+					<div class="minesweeper-container">
+						<div id="level-menu" class="controls">
+							<button onclick="startGame(1)" class="butS">
+								Уровень 1 (8x8)
+							</button>
+							<button onclick="startGame(2)" class="butS">
+								Уровень 2 (12x12)
+							</button>
+							<button onclick="startGame(3)" class="butS">
+								Уровень 3 (16x16)
+							</button>
+						</div>
+
+						<!-- Инфо о минах -->
+						<div id="mine-info">
+							Всего мин на поле: <span id="mines-count">0</span>
+						</div>
+
+						<div id="game-board" class="board" style="display: none"></div>
+						<div id="status"></div>
+						<button id="reset-btn" onclick="resetGame()">Перезапустить</button>
+						<div id="prize-container" style="display: none; margin-top: 10px">
+							<h3 id="prize-text" class="opis" style="color: gold"></h3>
+							<img
+								id="prize-img"
+								src=""
+								style="width: 250px; height: 250px; margin: 10px auto"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="saper.js"></script>
+	</body>
+</html>

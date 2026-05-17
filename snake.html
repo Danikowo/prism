@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="snake.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="glavn">
+				<a href="index.html"
+					><button class="but" id="hab">Вернутся в хаб</button></a
+				>
+				<h1 class="texts">PRISM</h1>
+				<h1 class="texts" id="o">Змейка</h1>
+				<br />
+				<h2 class="opis">Смысл игры:</h2>
+				<h2 id="qw">Будучи змеей ешьте яблоки:</h2>
+
+				<div class="cartpriz">
+					<h2 class="opis">25+ очков:</h2>
+					<img
+						src="flux-kontext-DGOhT4C1s1jRq6PPq2Vd2-removebg-preview (1).png"
+						class="img"
+					/>
+				</div>
+				<div class="cartpriz">
+					<h2 class="opis">15 очков:</h2>
+					<img
+						src="flux-kontext-DGOhT4C1s1jRq6PPq2Vd2-removebg-preview (1)фф.png"
+						class="img"
+					/>
+				</div>
+				<div class="cartpriz">
+					<h2 class="opis">5 очков:</h2>
+					<img src="trophy_78370-345-removebg-preview.png" class="img" />
+				</div>
+				<br />
+				<h1 class="opis">Ваш рекорд:</h1>
+				<img
+					id="best-prize-img"
+					src=""
+					alt=""
+					style="width: 350px; margin-top: 10px"
+				/>
+				<h1 class="opis">Управление:</h1>
+				<h2 class="opis">Стрелочки-управление змейкой</h2>
+				<h2 class="opis">Пробел-пауза</h2>
+				<div class="game">
+					<div id="level-menu">
+						<button class="butS" id="butsn" onclick="startGame()">
+							Начать игру
+						</button>
+					</div>
+
+					<div id="game-area" style="display: none">
+						<h2 id="status" class="opis">Счет: 0</h2>
+						<canvas id="game-canvas" width="400" height="400"></canvas>
+
+						<div id="prize-container" style="display: none; margin-top: 10px">
+							<h3 id="prize-text" style="color: gold"></h3>
+							<img id="prize-img" src="" style="width: 200px; margin: 0 auto" />
+						</div>
+
+						<button class="but" onclick="startGame()">Заново</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="snake.js"></script>
+	</body>
+</html>

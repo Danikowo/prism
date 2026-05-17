@@ -1,0 +1,169 @@
+#container {
+	display: flex;
+	justify-content: center;
+}
+#glavn {
+	width: 1215px;
+	height: 2479px;
+	background-color: #0013dfd8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.texts {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 50px;
+	-webkit-text-stroke: 0.5px #0f23ff;
+	color: #00ffff;
+}
+.opis {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 40px;
+	-webkit-text-stroke: 0.5px black;
+	color: #ffffff;
+}
+.opisan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text-opis {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 30px;
+	-webkit-text-stroke: 0.5px black;
+	color: #ffffff;
+	padding-left: 10px;
+}
+.cart {
+	display: flex;
+	align-items: center;
+	width: 350px;
+	height: 250px;
+	flex-direction: column;
+}
+.img {
+	width: 250px;
+	height: 250px;
+}
+#priz {
+	display: flex;
+	height: 350px;
+}
+.mini-games {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 250px;
+}
+.cartgames {
+	width: 95%;
+	height: 200px;
+	background-color: #324dffd8;
+	display: flex;
+	align-items: center;
+}
+.nazvgames {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 50px;
+	-webkit-text-stroke: 0.5px black;
+	color: #00ff00;
+	padding-left: 20px;
+}
+.text-games {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 30px;
+	-webkit-text-stroke: 0.3px black;
+	color: #ffffff;
+	width: 400px;
+	margin-left: 10%;
+}
+.imggame {
+	width: 200px;
+	height: 200px;
+}
+#saper {
+	color: #ff4b0a;
+}
+.active-voted {
+	color: red;
+}
+footer {
+	background-color: #0013e7b0;
+	height: 370px;
+	width: 100%;
+}
+.wrapper {
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+.heart {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	top: 1830px;
+	left: 900px;
+	border: none;
+	transform: rotate(45deg);
+}
+.heart:focus {
+	outline: none;
+}
+.heart::before,
+.heart::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	border-radius: 50%;
+}
+
+.heart::before {
+	top: -50px;
+	left: 0;
+}
+
+.heart::after {
+	top: 0;
+	left: -50px;
+}
+.beat {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	position: absolute;
+	top: 1830px;
+	left: 900px;
+	transform: rotate(45deg);
+	transition: all 0.2s;
+}
+
+.beat::before,
+.beat::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	border-radius: 50%;
+}
+
+.beat::before {
+	top: -50px;
+	left: 0;
+}
+.beat::after {
+	top: 0;
+	left: -50px;
+}
+
+.beat:active {
+	transform: rotate(45deg) scale(1.2);
+	opacity: 0;
+}
+#count-heart {
+	margin-left: 580px;
+}

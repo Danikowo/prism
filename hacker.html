@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="hacker.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="glavn">
+				<a href="index.html"
+					><button class="but" id="hab">Вернутся в хаб</button></a
+				>
+				<h1 class="texts">PRISM</h1>
+				<h1 class="texts" id="o">Хакер</h1>
+				<br />
+				<h2 class="opis">Смысл игры:</h2>
+				<h2 id="qw">
+					Разгадать число от 1 до 100 за ограниченное количество попыток:
+				</h2>
+
+				<div class="cartpriz">
+					<h2 class="opis">1-8 попыток:</h2>
+					<img
+						src="flux-kontext-DGOhT4C1s1jRq6PPq2Vd2-removebg-preview (1).png"
+						class="img"
+					/>
+				</div>
+				<div class="cartpriz">
+					<h2 class="opis">8-15 попыток:</h2>
+					<img
+						src="flux-kontext-DGOhT4C1s1jRq6PPq2Vd2-removebg-preview (1)фф.png"
+						class="img"
+					/>
+				</div>
+				<div class="cartpriz">
+					<h2 class="opis">15+ попыток:</h2>
+					<img src="trophy_78370-345-removebg-preview.png" class="img" />
+				</div>
+				<br />
+				<h1 class="opis">Ваш рекорд:</h1>
+				<img
+					id="best-prize-img"
+					src=""
+					alt=""
+					style="width: 350px; margin-top: 10px"
+				/>
+				<br />
+				<div class="game">
+					<h2>Угадай число</h2>
+					<div class="container">
+						<label>Введи число</label>
+						<br />
+						<input
+							type="text"
+							id="number"
+							min="1"
+							max="100"
+							required
+							placeholder="Ваше число"
+						/>
+						<br />
+						<button type="button" onclick="enter()" class="but">Ок</button>
+						<br />
+						<p id="text-game">
+							Угадай число от 1 до 100 за наименьшее количество попыток
+						</p>
+						<img
+							id="prize-img"
+							src=""
+							alt=""
+							style="width: 350px; margin-top: 10px"
+						/>
+						<button id="reset-btn" onclick="resetGame()" style="display: none">
+							Играть снова
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="hacker.js"></script>
+	</body>
+</html>

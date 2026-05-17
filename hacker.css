@@ -1,0 +1,94 @@
+#container {
+	display: flex;
+	justify-content: center;
+}
+#glavn {
+	width: 1215px;
+	height: 2650px;
+	background-color: #0013dfd8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.texts {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 50px;
+	-webkit-text-stroke: 0.5px #0f23ff;
+	color: #00ffff;
+}
+#o {
+	color: rgb(0, 255, 0);
+	-webkit-text-stroke: 0.5px #000000;
+}
+.img {
+	width: 250px;
+	height: 250px;
+}
+.opis {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 40px;
+	-webkit-text-stroke: 0.5px black;
+	color: #ffffff;
+}
+.cartpriz {
+	width: 500px;
+	height: 230px;
+	display: flex;
+	align-items: center;
+}
+#qw {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 30px;
+	-webkit-text-stroke: 0.5px black;
+	color: #ffffff;
+	margin-left: 10%;
+}
+.game {
+	background-color: rgba(0, 255, 255, 0.582);
+	border: 2px solid rgb(44, 98, 197);
+	border-radius: 5px;
+	padding: 20px;
+	font-family: "Press Start 2P", system-ui;
+	font-size: 30px;
+	-webkit-text-stroke: 0.5px #00085a;
+	color: #34e000;
+	height: 740px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.but {
+	font-family: "Press Start 2P", system-ui;
+	font-size: 15px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+	background-color: #001646;
+	width: 100px;
+	height: 30px;
+}
+.container {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#number {
+	background-color: rgba(0, 255, 255, 0.582);
+	border: 2px solid rgb(44, 98, 197);
+	width: 150px;
+	height: 30px;
+}
+#hab {
+	width: 250px;
+	height: 50px;
+	margin: 10px;
+}
+#reset-btn {
+	width: 200px;
+	height: 100px;
+	font-family: "Press Start 2P", system-ui;
+	font-size: 25px;
+	-webkit-text-stroke: 0.5px #00ffea;
+	color: #0062d3;
+	background-color: #001646;
+}
